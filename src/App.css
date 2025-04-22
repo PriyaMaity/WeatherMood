@@ -74,11 +74,43 @@ h1 {
 
 @media (max-width: 834px) {
   .container {
-    flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
 
+  .mood-entry {
+    width: 50vw !important;
+    height: auto !important;
+  }
+
+  .calendar-view {
+    width: 40vw !important;
+  }
+
+  .notes-modal {
+    width: 70vw !important;
+  }
+  .mood-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 654px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .dark-toggle {
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+  }
   .mood-entry {
     width: 80vw !important;
     height: auto !important;
@@ -91,31 +123,17 @@ h1 {
   .notes-modal {
     width: 80vw !important;
   }
-}
-
-@media (max-width: 456px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .dark-toggle {
-    top: 8px;
-    right: 8px;
-    font-size: 14px;
-  }
-  .mood-entry {
-    width: 85vw !important;
-    height: auto !important;
-  }
   .heading {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
   .mood-options {
-    font-size: 1.2rem;
-    padding: 0.4rem;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .mood-icon {
+    font-size: 1.5rem;
+    padding: 0.6rem;
   }
 }
