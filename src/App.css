@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./assets/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+h1 {
+  color: #2b2d42;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+.container {
+  margin: 2rem auto;
+  border-radius: 16px;
+  display: flex;
+  gap: 2px;
+}
+.heading {
+  display: flex;
+  margin: 20px 10px 6px 10px;
+  justify-content: space-between;
+  text-align: left;
+}
+.app.dark .calendar-view,
+.app.dark .notes-modal,
+.app.dark .calendar-entry-popup {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+.app.dark header .notes-btn {
+  background-color: #cae9ff;
+  color: #2a2a2a;
+}
+.app.dark .notes-btn:hover {
+  background-color: #5fa8d3;
+  color: #2a2a2a;
+}
+.dark-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dark-toggle:hover {
+  background: transparent;
+}
+.app.dark .dark-toggle {
+  background: transparent;
+}
+.app.dark .dark-toggle:hover {
+  background: transparent;
+}
+
+@media (max-width: 834px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .mood-entry {
+    width: 75vw !important;
+    height: auto !important;
+  }
+
+  .calendar-view {
+    width: 75vw !important;
+  }
+
+  .notes-modal {
+    width: 75vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .dark-toggle {
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

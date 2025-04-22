@@ -1,0 +1,119 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff8f0;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.note-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.note-card small {
+  color: #666;
+}
+
+.weather-info {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal-content button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  background-color: #d90429;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal-content button:hover {
+  background-color: #eb4457;
+}
+
+.app.dark .modal-content {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.app.dark .note-card {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.app.dark small {
+  color: #ccc;
+}
+
+.app.dark .modal-content button {
+  background-color: #cae9ff;
+  color: #2a2a2a;
+}
+
+.app.dark .modal-content button:hover {
+  background-color: #5fa8d3;
+  color: #2a2a2a;
+}
