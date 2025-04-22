@@ -1,12 +1,59 @@
-# React + Vite
+# 🌟 WEATHERMOOD - Interactive Mood Journal Web App 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web app that helps you track your mood, add daily notes, and view weather information for each entry. Built with **React**, **Vite**, **HTML**, **CSS**, and **JavaScript** (no Tailwind).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features ✨
+- **Mood Tracking**: Select your current mood (😊 Happy, 😐 Neutral, 😔 Sad, 😠 Angry, 🤢 Sick) and jot down a note about your day.
+- **Weather Info**: The app fetches live weather data based on your location and displays it alongside your mood entry.
+- **Dark Mode**: Switch between light and dark themes for a personalized viewing experience.
+- **Mood Filter**: Easily view entries filtered by specific moods.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Technologies Used 🚀
+- **React**: A powerful library for building interactive UIs.
+- **Vite**: A fast and modern build tool for a better development experience.
+- **HTML/CSS**: For clean and responsive design.
+- **JavaScript**: To add interactivity and manage application logic.
+- **Weather API**: Fetches real-time weather data based on your location.
+
+---
+
+## 📦 Installation Guide 📦
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/PriyaMaity/WeatherMood.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd weathermood
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to:
+   ```bash
+   http://localhost:3000
+   ```
+
+---
+
+## 🧑‍💻 Usage 🧑‍💻
+
+- **Adding Entries**: Choose a mood, write your thoughts, and the app will capture the date along with weather data based on your current location.
+- **Viewing Entries**: Browse your mood entries in a modal. You can filter them by specific moods for easier access.
+- **Dark Mode**: Toggle between light and dark themes by clicking the button at the top-right of the screen.
+
+---
