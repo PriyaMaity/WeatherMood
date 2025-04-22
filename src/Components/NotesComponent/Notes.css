@@ -29,6 +29,35 @@
   text-align: center;
 }
 
+.modal-content select {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease;
+}
+
+.modal-content select:hover {
+  border-color: #d90429;
+}
+
+.modal-content select:focus {
+  border-color: #ff6b6b;
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 107, 107, 0.7);
+}
+
+.modal-content select option {
+  background-color: #fff;
+  color: #333;
+}
+
 .notes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -116,4 +145,18 @@
 .app.dark .modal-content button:hover {
   background-color: #5fa8d3;
   color: #2a2a2a;
+}
+.app.dark .modal-content select {
+  background-color: #3a3a3a;
+  color: #fff;
+  border-color: #444;
+}
+
+.app.dark .modal-content select:hover {
+  border-color: #5fa8d3;
+}
+
+.app.dark .modal-content select:focus {
+  border-color: #5fa8d3;
+  box-shadow: 0 0 4px rgba(95, 168, 211, 0.7);
 }

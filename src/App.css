@@ -56,20 +56,29 @@ h1 {
   position: fixed;
   top: 10px;
   right: 10px;
-  background: transparent;
+  background-color: #2a2a2a;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dark-toggle:hover {
-  background: transparent;
+  background-color: #ffd93d;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 .app.dark .dark-toggle {
-  background: transparent;
+  background-color: #cae9ff;
+  color: #2a2a2a;
 }
+
 .app.dark .dark-toggle:hover {
-  background: transparent;
+  background-color: #5fa8d3;
 }
 
 @media (max-width: 834px) {
